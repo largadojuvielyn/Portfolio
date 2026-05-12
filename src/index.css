@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --navy: #0a192f;
+  --navy-light: #112240;
+  --lightest-slate: #ccd6f6;
+  --slate: #8892b0;
+  --slate-dark: #495670;
+  --green: #64ffda;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--lightest-slate);
+  background: var(--navy);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--green);
+  color: var(--navy);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  z-index: 9999;
+  border-radius: 4px;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 1rem;
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}
+
+/* Section heading used in About, Projects */
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 600;
+  color: var(--lightest-slate);
+  margin: 0 0 2.5rem;
+  white-space: nowrap;
+}
+
+.section-number {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  color: var(--green);
+}
+
+.section-heading::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  max-width: 300px;
+  background: var(--slate-dark);
+  margin-left: 1rem;
+}

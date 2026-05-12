@@ -1,0 +1,92 @@
+.experience.section {
+  padding: 6rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.experience-job {
+  color: var(--slate);
+}
+
+.job-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.job-company {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--lightest-slate);
+  margin: 0;
+}
+
+.job-tenure {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--slate-dark);
+}
+
+.job-role {
+  margin-bottom: 1.5rem;
+}
+
+.job-role:last-child {
+  margin-bottom: 0;
+}
+
+.role-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.role-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--green);
+  margin: 0;
+}
+
+.role-dates {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--slate-dark);
+}
+
+.role-bullets {
+  margin: 0 0 0.5rem;
+  padding-left: 1.25rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.role-bullets li {
+  margin-bottom: 0.35rem;
+}
+
+.role-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.role-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--slate);
+  background: var(--navy-light);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+}

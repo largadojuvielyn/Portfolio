@@ -1,0 +1,66 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero-greeting {
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  margin-bottom: 0.5rem;
+}
+
+.hero-name {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 600;
+  color: var(--lightest-slate);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0 0 0.5rem;
+}
+
+.hero-role {
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  margin: 0 0 0.5rem;
+}
+
+.hero-tagline {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 600;
+  color: var(--slate);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0 0 1.5rem;
+}
+
+.hero-desc {
+  color: var(--slate);
+  font-size: 1.1rem;
+  max-width: 540px;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.hero-cta {
+  display: inline-block;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  padding: 0.85rem 1.5rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.hero-cta:hover {
+  background: rgba(100, 255, 218, 0.1);
+  color: var(--green);
+}

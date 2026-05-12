@@ -1,0 +1,78 @@
+.projects.section {
+  padding: 6rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.projects-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-item {
+  margin-bottom: 0.5rem;
+}
+
+.project-link {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem 1rem;
+  color: var(--slate);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.project-link:hover {
+  background: var(--navy-light);
+  color: var(--green);
+}
+
+.project-number {
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--green);
+  width: 2rem;
+}
+
+.project-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.project-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--lightest-slate);
+  margin: 0 0 0.25rem;
+  transition: color 0.2s;
+}
+
+.project-link:hover .project-title {
+  color: var(--green);
+}
+
+.project-desc {
+  font-size: 0.9rem;
+  color: var(--slate);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.project-arrow {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+  color: var(--green);
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.project-link:hover .project-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}

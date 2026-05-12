@@ -1,0 +1,68 @@
+.contact.section {
+  padding: 8rem 2rem 6rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-label {
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-heading {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+  color: var(--lightest-slate);
+  margin: 0 0 1rem;
+}
+
+.contact-desc {
+  color: var(--slate);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.contact-cta {
+  display: inline-block;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  padding: 1rem 1.75rem;
+  transition: background 0.2s;
+}
+
+.contact-cta:hover {
+  background: rgba(100, 255, 218, 0.1);
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.contact-links a {
+  color: var(--slate);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-links a:hover {
+  color: var(--green);
+}
+
+.contact-footer {
+  margin-top: 4rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--slate-dark);
+}
