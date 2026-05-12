@@ -1,4 +1,4 @@
-## Run locally1
+## Run locally
 
 ```bash
 npm install
